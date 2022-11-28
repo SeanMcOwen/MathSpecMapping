@@ -8,6 +8,10 @@ authors = [
   { name="Sean McOwen", email="Sean@Block.Science" },
 ]
 description = "A library for easy mapping of mathematical specifications."
+dependencies = [
+  "graphviz>=0.20.1",
+  "ipython>=7.7.0"
+]
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [

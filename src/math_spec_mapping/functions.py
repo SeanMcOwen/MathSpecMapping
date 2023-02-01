@@ -20,7 +20,7 @@ def find_starting_entities(actions_to_map, behavioral_action_space, behavioral_a
     return entities, edges, queue
 
 
-def create_graph(actions_to_map, name, behavioral_action_space, all_edges):
+def create_graph(actions_to_map, name, behavioral_action_space, all_edges, return_graph=False):
 
     all_nodes = {"behavioral": actions_to_map,
                  "policies": [],
@@ -90,8 +90,11 @@ def create_graph(actions_to_map, name, behavioral_action_space, all_edges):
         a.pop('color')
         print("{}: {} -> {}".format(g.color, g.__name__, a))
         print()
-    display(graph)
-    return all_nodes
+    if return_graph:
+        return all_nodes, graph
+    else:
+        display(graph)
+        return all_nodes
 
 
 def write_out_behavioral_functions(behavioral_action_space, action_names):

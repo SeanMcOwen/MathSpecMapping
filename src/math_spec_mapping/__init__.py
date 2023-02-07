@@ -11,3 +11,5 @@ from .functions import (find_starting_entities, create_graph,
                         write_spec_details, write_state_variable_table,
                         write_local_state_variable_tables, write_global_state_variable_tables,
                         write_state_parameter_table, write_full_state_section)
+
+from . import reports

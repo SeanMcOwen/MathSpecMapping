@@ -1,3 +1,3 @@
 # Mathematical Specification Mapping Library
 
-The following is a work-in-progress library for easy mapping of mathematical specifications.
+This library is archived as it was meant to represent an alpha version. The current working version can be found [here](https://github.com/BlockScience/MSML)
